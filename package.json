@@ -1,0 +1,25 @@
+{
+  "name": "auto-home",
+  "version": "0.0.1",
+  "description": "Yes",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/MrBenJ/auto-home"
+  },
+  "author": "Ben Junya",
+  "license": "WTFPL",
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "jest": "^19.0.2"
+  },
+  "dependencies": {
+    "express": "^4.15.2",
+    "nodemon": "^1.11.0"
+  }
+}
