@@ -5,12 +5,14 @@ let app = express();
 // Port to send stuff to
 let PORT = 3000;
 
+function getTemplate(template) {
+    return path.join(__dirname, `views/${template}.html`);
+}
 // Deliver static files
 app.use(express.static('dist'));
 
 app.get('/', (req,res) => {
-    let indexFile = path.join(__dirname, 'views/index.html');
-    res.sendFile(indexFile);
+    res.sendFile(getTemplate('index'));
 });
 
 app.listen(3000, () => {
